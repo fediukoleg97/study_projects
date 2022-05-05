@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table HTML</title>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    body{
+      /*font-size: 16px;*/
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1;
+      color:rgb(93, 95, 97);
+      /* Or This is center page*/
+      display: flex;
+      justify-content: center;
+    }
+
+    table{
+      width: 800px;
+      /*background-color: rgb(216, 216, 216);*/
+      margin-top: 40px;
+      /*border:1px solid gray;*/
+      /* This is for right view of inside table*/
+      border-collapse: collapse;
+      /*margin: 0 auto;*/
+      /*This is can to center*/
+      font-size: 16px;
+    }
+
+    th,td{
+      /*border:1px solid gray;*/ 
+      padding: 16px 24px;
+      text-align: left;
+    }
+
+    thead th{
+      background-color: rgb(68, 17, 116);
+      color: white;
+      width: 25%;
+    }
+
+    tbody tr:nth-child(odd){
+      background-color:rgb(216, 211, 221);
+    }
+    tbody tr:nth-child(even){
+      background-color:rgb(231, 225, 238);
+    }
+
+
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Chair
+        </th>
+        <th>
+          The Laid Back
+        </th>
+        <th>
+          The Worker Bee
+        </th>
+        <th>
+          The Chair 4/2
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          Width
+        </th>
+        <td>
+          80cm
+        </td>
+        <td>
+          60cm
+        </td>
+        <td>
+          220cm
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          Height
+        </th>
+        <td>
+          100cm
+        </td>
+        <td>
+          110cm
+        </td>
+        <td>
+          90cm
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          Depth
+        </th>
+        <td>
+          70cm
+        </td>
+        <td>
+          65cm
+        </td>
+        <td>
+          80cm
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          Weight
+        </th>
+        <td>
+          16kg
+        </td>
+        <td>
+          22kg
+        </td>
+        <td>
+          80kg
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

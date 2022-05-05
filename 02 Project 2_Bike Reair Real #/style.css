@@ -1,0 +1,287 @@
+html {
+  /*height: 100%;*/
+  /*This is for right image of gradienton full screen bigger then me*/
+  /*We delete height 1024 because our website is longer*/
+  background-image: linear-gradient(#fc5e55, #fa4083);
+}
+body {
+  /*background-color: #fc5e55;*/
+  background-image: url(images/image-lion-background.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  /*font-family: "Playfair Display", serif;*/
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  /*font-weight: 600;*/
+  color: white;
+}
+
+.container {
+  width: 1024px;
+  /*background-color: blueviolet;*/
+  /*height: 100px;*/
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  /*background-color: rgb(178, 108, 243);*/
+  /* min-height: 100px;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom-width: 1px;
+  border-color: rgb(228, 225, 225);
+  border-bottom-style: solid;
+}
+
+main {
+  /*background-color: rgb(150, 101, 196);*/
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.main2 {
+  min-height: 300px;
+  align-items: center;
+  /*padding-left: 50px;*/
+  padding-top: 50px;
+}
+
+.cards {
+  /*background-color: rgb(98, 74, 121);*/
+  /*min-height: 300px;*/
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+}
+
+.card1 {
+  /*background-color: rgb(47, 11, 179);*/
+  background-image: url(images/image-background-card1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+}
+
+.card2 {
+  /*background-color: rgb(38, 7, 151);*/
+  background-image: url(images/image-background-card2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+}
+
+.card3 {
+  /*background-color: rgb(47, 11, 179);*/
+  background-image: url(images/image-background-card3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+}
+
+.herobox1 {
+  /*background-color: rgb(198, 147, 247);*/
+  /*width: 50%;*/
+  flex: 2;
+  margin-right: 100px;
+}
+
+.herobox2 {
+  /*background-color: rgb(130, 8, 245);*/
+  /*width: 50%;*/
+  flex: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/*ADD THIS IN RESET CSS MAYBE DO*/
+h1 {
+  font-size: 3.25rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1.25rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+p {
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  /*margin-top: 20px;*/
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  /*margin-bottom: 1.25rem;*/
+  /*text-align: center;*/
+}
+
+.cards p {
+  /*text-align: center;*/
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  /*padding: 0 10px;*/
+}
+
+.image__on__cards {
+  /*padding-top: 20px;*/
+}
+
+.mybutton {
+  background-color: white;
+  color: #fa4083;
+  font-family: "Playfair Display", serif;
+  padding: 11px 25px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.295);
+}
+
+.mybutton:hover {
+  background-color: #f8aec9;
+  transition-duration: 1s;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.733);
+}
+/*.herobox2 img {
+  border-radius: 8px;
+  border-radius: 0px 400px 600px 0px;
+}
+*/
+.navbutton {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fcf8f9;
+  font-family: "Playfair Display", serif;
+  padding: 11px 25px;
+  display: inline-block;
+  /*margin-bottom: 15px;*/
+  border-radius: 2px;
+  border: 1px white solid;
+  box-shadow: 1px 1px 1px rgba(179, 176, 176, 0.753);
+  /*margin-right: 20px;*/
+  position: relative;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+/*hr {
+  color: white;
+}*/
+
+.testimonials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /*text-align: center;*/
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.tbox {
+  box-sizing: border-box;
+  width: 47%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #fcf8f9;
+  font-family: "Playfair Display", serif;
+  padding: 11px 25px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  border: 1px white solid;
+  box-shadow: 1px 1px 2px rgba(179, 176, 176, 0.753);
+  margin-top: 50px;
+}
+
+.tbox :first-child {
+  font-style: italic;
+}
+
+.tbox :last-child {
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+
+.navbuttonmenu {
+  box-sizing: border-box;
+  /*width: 120px;*/
+  background-color: rgba(255, 255, 255, 0.932);
+  position: absolute;
+  display: none;
+  z-index: 1;
+  /*text-align: center;*/
+}
+
+.navbutton:hover .navbuttonmenu {
+  display: block;
+  margin-left: -25px;
+  padding-top: 20px;
+}
+
+.navbutton:hover {
+  background-color: rgba(255, 255, 255, 0.384);
+  transition: 0.2s;
+}
+
+.navbutton .navbuttonmenu .navbutton {
+  width: 110px;
+}
+.navbutton .navbuttonmenu .navbutton a {
+  color: #fa4083;
+}
+
+.input-wrapper {
+  margin: 15px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 12px 20px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/*label {
+  display: block;
+}*/
+
+input[type="radio"] {
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+form .navbutton {
+  background-color: rgba(221, 218, 218, 0.74);
+}
+
+.form2 {
+  display: block;
+  margin-bottom: 50px;
+  /*background-color: blue;*/
+}

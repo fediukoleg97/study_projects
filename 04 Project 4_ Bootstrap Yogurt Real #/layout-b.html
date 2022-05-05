@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--This is center of screen cause-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Layout Bootsrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .mybox1 {
+      background-color: tomato;
+      min-height: 200px;
+      margin: 20px 10px;
+      padding: 20px;
+    }
+
+    .mybox2 {
+      background-color: springgreen;
+      min-height: 200px;
+      margin: 20px 10px;
+      padding: 20px;
+    }
+
+    .mybg1 {
+      background-color: darkslategray;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- MArgin and bottom is mb - 5 is em to browser margin-->
+  <header class="container-fluid mybg1 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <!--<div class="w-25">-->
+          <div class="mybox1">LOGO</div>
+        </div>
+        <nav class="col">
+          <div class="mybox2">NAVIGATION</div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="mybox1">
+          <p class="m-5 m-md-0 m-lg-n5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid excepturi atque praesentium illum delectus
+            repellat quas dolores sequi quaerat officia quo dolorem at molestias dicta, numquam aliquam vero pariatur
+            facilis laboriosam consequuntur sit non in fuga. Doloremque sed voluptate, ipsa libero obcaecati recusandae
+            eius ducimus eveniet soluta explicabo? Vero, dicta quo culpa quae quod officiis nam velit perspiciatis qui
+            at commodi deserunt, ratione iste facere exercitationem expedita corporis ipsum? Iste neque possimus quasi
+            quidem suscipit eveniet non necessitatibus, ipsum maxime totam quisquam rerum omnis vero temporibus cumque
+            saepe adipisci doloribus quas dignissimos. Eius nulla reiciendis iusto a nam ex perferendis!</p>
+          <div class="row">
+            <div class="col mybox2 mx-4">
+              Box1
+            </div>
+            <div class="col mybox2 mx-4">
+              <!--Negative margin is n mx-n5-->
+              Box2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col">
+        <div class="mybox1">Box1</div>
+      </div>
+      <div class="col">
+        <div class="mybox1">Box2</div>
+      </div>
+      <div class="col">
+        <div class="mybox1">Box3</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

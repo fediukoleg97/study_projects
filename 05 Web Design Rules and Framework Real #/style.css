@@ -1,0 +1,275 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+Main color: #087f5b
+Gray color: #343a40
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  /* Do this text gray*/
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header,
+section {
+  /*/ 80 / 96 /*/
+  margin-bottom: 96px;
+}
+
+h2 {
+  margin-bottom: 48px;
+  /*/ 24 / 30 / 36 / These font size we see */
+  font-size: 36px;
+  /* USe letter spacing for big text for more natural*/
+  letter-spacing: -0.5px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  /*/ 64 /*/
+  margin-top: 64px;
+}
+
+.header-text-box {
+  align-self: center;
+}
+
+h1 {
+  /* 32 px*/
+  margin-bottom: 32px;
+  /*/ 44 / 52 / 62 /*/
+  font-size: 44px;
+  /*For big size text smaller line-height*/
+  line-height: 1.1;
+  /* There is more natural for big letters*/
+  letter-spacing: -1px;
+  /*do not weird shadows,man*/
+  /*text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
+}
+
+.header-text {
+  margin-bottom: 24px;
+  /*/ 18 / 20 / I see that text header has biiger than default size 16 px in system , i try to do more bigger*/
+  font-size: 18px;
+  /* For smaller text is bigger line height 1.5 or above*/
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+  width: 32px;
+  height: 32px;
+  /*padding: 0 auto 0 auto;*/
+  stroke: #087f5b;
+  /*text-align: center;*/
+  /* 24 px space*/
+  margin-bottom: 24px;
+  /*margin: 0 40%;*/
+}
+
+.features-title {
+  margin-bottom: 16px;
+
+  /*Ierarchy of heading without big contrast with heading*/
+  /*/ 20 / 24 / 30 /*/
+  font-size: 20px;
+}
+
+.features-text {
+  /*/ 16 / 18 /*/
+  font-size: 18px;
+
+  line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #087f5b;
+  color: white;
+  padding: 24px;
+
+  border-radius: 12px;
+}
+
+.testimonial-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.testimonial-box h2 {
+  margin-bottom: 24px;
+  /* This is must be smaller / 20 / 24 / 30 / */
+  font-size: 24px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  /* Copy styles of text from other text is normal*/
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  /* visual ierarchy and contrast*/
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  color: #c3fae8;
+  /*contrast ierarchy*/
+}
+
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+
+  border-radius: 12px;
+}
+
+.chair img {
+  border-radius: 12px 12px 0 0;
+}
+
+/* CHAIRS */
+.chair-box {
+  padding: 32px;
+  /*box-shadow: 20px 20px 20px 10px #000;*/
+}
+
+h3 {
+  margin-bottom: 24px;
+  /* / 18 / 20 / 24 /*/
+  font-size: 20px;
+}
+
+.chair-details {
+  list-style: none;
+  /*visual ierarchy inside card*/
+  margin-bottom: 48px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /*visual ierarchy inside card*/
+  margin-bottom: 16px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+.chair-icon {
+  stroke: #087f5b;
+  /*fill:red;*/
+  width: 24px;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* This is important and this is to same size as h3*/
+  font-size: 20px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  /*padding from spacing system */
+  /*padding: 16px 32px;*/
+  /*To add spacing vertical*/
+  display: inline-block;
+  /* font weight to bolder and little then heading weight 500 bolder*/
+  font-weight: 500;
+  /*font-size: 18px;*/
+  border-radius: 100px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn {
+}
+
+.btn-big {
+  padding: 16px 32px;
+  font-size: 18px;
+  /*background-color: black;
+  border: 6px solid blue;*/
+}
+
+.btn-small {
+  /*display: inline-block;*/
+  /*display: block;*/
+  /*display: inline;*/
+  padding: 8px 12px;
+  /*margin: 20px;*/
+  font-size: 14px;
+  /*border: 6px solid blue;*/
+}
+
+img {
+  border-radius: 12px;
+}
+
+/*.chair-price .btn-small {
+  padding: 16px 32px;
+  font-size: 18px;
+  background-color: aqua;
+  color: violet;
+}*/
+
+footer {
+  margin-bottom: 48px;
+
+  /* 10 / 12 / 14  There is no important, do it right because there in not contrast big small*/
+  font-size: 14px;
+  /* color of footer must be contract and lighter*/
+  color: #66707a;
+}

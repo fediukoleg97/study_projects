@@ -1,0 +1,45 @@
+body {
+}
+
+nav {
+  /*display: flex;*/
+}
+
+.navbutton {
+  background-color: rgb(67, 67, 133);
+  padding: 10px 25px;
+  width: 100px;
+  text-align: center;
+  border: 1px white solid;
+  display: inline-block;
+  position: relative;
+}
+
+.navbutton a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  /*margin-top: 10px;*/
+  margin-left: -25px;
+
+  padding-top: 10px;
+}
+
+/*This turns on dropdown menu*/
+.navbutton:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .navbutton {
+  background-color: rgb(39, 39, 80);
+}
+
+.navbutton:hover {
+  background-color: rgb(119, 119, 187);
+  transition-duration: 0.1s;
+}

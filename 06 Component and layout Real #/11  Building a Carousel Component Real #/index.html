@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;200;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      line-height: 1.8;
+      background-color: beige;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .carousel{
+      margin-top: 150px;
+
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box-background{
+      background-color: rgb(60, 161, 99);
+      width: 850px;
+      height: 300px;
+
+      border-radius: 10px;
+
+      display: grid;
+      grid-template-columns: 40px 300px 1fr 40px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box-space{
+      width: 100%;
+    }
+
+    .text{
+      margin: 40px 30px;
+      color: white;
+      font-weight: 500;
+      padding-left: 50px;
+    }
+
+    .text-name{
+      display: block;
+      font-size: 16px;
+      font-weight: 200;
+
+      margin-top: 20px;
+    }
+
+    .text-job{
+      display: block;
+      font-size: 14px;
+      font-weight: 200;
+    }
+
+    .icon{
+      width: 24px;
+      height: 24px;
+      stroke: rgb(60, 161, 99);
+    }
+
+    .btn-icon:hover .icon{
+      stroke: white;
+    }
+
+    .btn-icon{
+      width: 40px;
+      height: 40px;
+      border: 1px solid white;
+      background-color: white;
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.137);
+    }
+
+    .btn-icon:first-child{
+      margin: 0 -20px;
+    }
+
+    .btn-icon:last-child{
+      margin: 0 20px;
+    }
+
+    .btn-icon:hover{
+      background-color: rgb(60, 161, 99);
+    }
+
+    .dots{
+      width: 100px;
+      /*background-color: blue;*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 20px;
+      /*background-color: blue;*/
+      
+      justify-self: center;
+    }
+
+    .dot{
+      width: 12px;
+      height: 12px;
+      border: 2px solid rgb(60, 161, 99);
+      background-color: white;
+      border-radius: 50%;
+      
+    }
+    
+    .dot:hover, .dot.active{
+      border: 2px solid rgb(60, 161, 99);
+      background-color: rgb(60, 161, 99);
+    }
+
+    .image{
+      position: relative;
+      background-color: blue;
+
+      /*align-self: center;*/
+      justify-content: center;
+    }
+    
+    .image img{
+      position: absolute;
+      width: 330px;
+      height: 330px;
+
+      top: -165px;
+
+      border-radius: 10px;
+
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.164);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="carousel">
+
+    <div class="box-background">
+
+      <div class="btn-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </div>
+
+
+      <div class="image">
+          <img src="maria.jpg" alt="">
+      </div>
+
+      <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore officiis et magnam ducimus saepe, minus eos ea itaque, ipsa incidunt praesentium quia.</p>
+          <span class="text-name">Maria de Almeida</span>
+          <span class="text-job">Senior Product Manager at EDP Comercial</span>
+      </div>
+
+      <div class="btn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+      </div>
+
+    </div>
+
+    <div class="dots">
+      <div class="dot"></div>
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    
+
+
+    
+  </div>
+
+</body>
+</html>

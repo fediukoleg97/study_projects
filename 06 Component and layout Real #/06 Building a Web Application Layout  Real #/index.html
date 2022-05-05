@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a Web Application Layout</title>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      color: rgb(87, 87, 87);
+      font-size: 24px;
+      font-weight: bold;
+      height: 100vh;
+      text-align: center;
+
+      display: grid;
+      grid-template-columns: 80px 400px 1fr 250px;
+      grid-template-rows: 80px 1fr;
+    }
+
+    nav,section,main,aside{
+      padding:24px;
+    }
+
+    nav{
+      background-color: rgb(211, 171, 248);
+      grid-row: 1 / -1;
+    }
+
+    menu{
+      background-color: rgb(248, 171, 171);
+      grid-column: 2 / -1;
+      display: flex;
+      align-items: center;
+      gap:12px;
+      padding: 0 40px;
+    }
+
+    section{
+      background-color: rgb(248, 171, 210);
+      padding: 40px;
+
+      overflow: scroll;
+
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    main{
+      background-color: rgb(174, 248, 171);
+    }
+
+    aside{
+      background-color: rgb(171, 248, 248);
+    }
+
+    button{
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(233, 231, 231);
+
+      padding:8px 12px;
+      background-color: blueviolet;
+      border:none;
+      cursor: pointer;
+    }
+
+    button:last-child{
+      background-color: rgb(236, 85, 85);
+      margin-left: auto;
+      /*This is a trick*/
+    }
+
+    .email{
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(233, 231, 231);
+
+      height: 96px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      background-color: rgb(107, 107, 107);
+      /*border:1px solid grey;*/
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    Nav
+  </nav>
+
+  <menu>
+    <!--<h5>Menu</h5>-->
+    <!--<div class="mybuttons">-->
+      <button>NEW</button>
+      <button>REPLACE</button>
+      <button>MANGE</button>
+      <button>TOBIKE</button>
+      <button>Trash</button>
+    <!--</div>-->
+  </menu>
+
+  <section>
+    <!--Inbox-->
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+    <div class="email">Email</div>
+  </section>
+
+  <main>
+   Email View
+  </main>
+
+  <aside>
+    Additional element
+  </aside>
+
+</body>
+</html>
